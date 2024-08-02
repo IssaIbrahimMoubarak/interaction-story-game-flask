@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu d'histoire interactive</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            background-color: {{ background_color }};
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu d'histoire interactive</h1>
+        <div class="story-image">
+            <img src="{{ image_url }}" alt="Image de l'histoire">
+        </div>
+        <div class="story-text">
+            {{ story_text }}
+        </div>
+        <div class="choices">
+            {% for choice, next_node in choices.items() %}
+                <a href="/navigate?node={{ next_node }}" class="choice-button">
+                    {{ choice }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

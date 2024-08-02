@@ -1,0 +1,124 @@
+{
+    "start": {
+        "text": "Vous vous trouvez dans une forêt sombre. Vous pouvez aller à gauche ou à droite.",
+        "image": "images/forest.jpg",
+        "choices": {
+            "Aller à gauche": "left",
+            "Aller à droite": "right"
+        },
+        "color": "#6B8E23"
+    },
+    "left": {
+        "text": "Vous rencontrez un loup féroce! Que voulez-vous faire?",
+        "image": "images/wolf.jpg",
+        "choices": {
+            "Combattre le loup": "fight_wolf",
+            "Fuir": "run_away"
+        },
+        "color": "#FF4500"
+    },
+    "right": {
+        "text": "Vous trouvez une carte au trésor! Que voulez-vous faire?",
+        "image": "images/treasure_map.jpg",
+        "choices": {
+            "Suivre la carte": "follow_map",
+            "Ignorer la carte": "ignore_map"
+        },
+        "color": "#FFD700"
+    },
+    "fight_wolf": {
+        "text": "Vous avez combattu courageusement le loup et vous l'avez vaincu! Vous trouvez un passage secret derrière les buissons.",
+        "image": "images/secret_passage.jpg",
+        "choices": {
+            "Explorer le temple": "explore_temple",
+            "Revenir en arrière": "backtrack"
+        },
+        "color": "#8B0000"
+    },
+    "run_away": {
+        "text": "Vous avez couru et réussi à échapper au loup, mais vous vous perdez dans la forêt. Que voulez-vous faire?",
+        "image": "images/lost_forest.jpg",
+        "choices": {
+            "Trouver un chemin": "find_way",
+            "Appeler à l'aide": "call_help"
+        },
+        "color": "#6B8E23"
+    },
+    "follow_map": {
+        "text": "Vous suivez la carte et trouvez un trésor caché! Que voulez-vous faire?",
+        "image": "images/treasure.jpg",
+        "choices": {
+            "Prendre le trésor": "take_treasure",
+            "Laisser le trésor": "leave_treasure"
+        },
+        "color": "#FFD700"
+    },
+    "ignore_map": {
+        "text": "Vous continuez votre chemin et vous trouvez une sortie de la forêt.",
+        "image": "images/forest_exit.jpg",
+        "choices": {
+            "Sortir de la forêt": "exit_forest"
+        },
+        "color": "#6B8E23"
+    },
+    "explore_temple": {
+        "text": "Vous explorez le temple et découvrez des artefacts anciens. Vous devenez un héros connu pour vos découvertes!",
+        "image": "images/temple.jpg",
+        "choices": {
+            "Fin héroïque": "heroic_end"
+        },
+        "color": "#FFD700"
+    },
+    "backtrack": {
+        "text": "Vous retournez en arrière et trouvez une sortie de la forêt.",
+        "image": "images/forest_exit.jpg",
+        "choices": {
+            "Sortir de la forêt": "exit_forest"
+        },
+        "color": "#6B8E23"
+    },
+    "find_way": {
+        "text": "Après des heures de recherche, vous retrouvez votre chemin.",
+        "image": "images/forest_path.jpg",
+        "choices": {
+            "Sortir de la forêt": "exit_forest"
+        },
+        "color": "#6B8E23"
+    },
+    "call_help": {
+        "text": "Votre appel à l'aide est entendu par des randonneurs. Vous êtes sauvé et devenez un héros pour votre courage!",
+        "image": "images/rescue.jpg",
+        "choices": {
+            "Fin héroïque": "heroic_end"
+        },
+        "color": "#FFD700"
+    },
+    "take_treasure": {
+        "text": "Vous ouvrez le trésor et trouvez des richesses inestimables! Vous utilisez ces richesses pour aider votre communauté.",
+        "image": "images/wealth.jpg",
+        "choices": {
+            "Fin héroïque": "heroic_end"
+        },
+        "color": "#FFD700"
+    },
+    "leave_treasure": {
+        "text": "Vous décidez de laisser le trésor et de continuer votre chemin. Vous trouvez une sortie de la forêt.",
+        "image": "images/forest_exit.jpg",
+        "choices": {
+            "Sortir de la forêt": "exit_forest"
+        },
+        "color": "#6B8E23"
+    },
+    "exit_forest": {
+        "text": "Vous avez trouvé une sortie sûre de la forêt. Votre aventure est terminée.",
+        "image": "images/safe_exit.jpg",
+        "choices": {},
+        "color": "#6B8E23" 
+    },
+    "heroic_end": {
+        "text": "Félicitations! Vous avez terminé le jeu avec une fin héroïque! Merci d'avoir joué.",
+        "image": "images/hero.jpg",
+        "choices": {},
+        "color": "#FFD700"
+    }
+}
